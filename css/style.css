@@ -1,0 +1,254 @@
+:root{
+    /*Primary*/
+
+    --Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+/*gradiant*/
+
+--Light-slateblue : hsl(252, 100%, 67%); /*(background)*/
+--Light-royal-blue: hsl(241, 81%, 54%);/*(background)*/
+--Violet-blue : hsla(256, 72%, 46%, 1);/*(circle))*/
+--Persian-blue : hsla(241, 72%, 46%, 0);/*(circle)*/
+
+/*Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}; 
+
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Hanken Grotesk", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.main{
+    margin:280px 350px ;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 10px 20px 12px var(--Pale-blue, 0.6);
+    border-radius: 30px;
+    height:515px ;
+    width: 740px;
+   
+}
+.card-left{
+   
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-right: 45px;
+    padding-bottom: 35px;
+    padding-left: 45px;
+    align-items: center;
+    text-align: center;
+    width: 370px;
+    height: auto;
+    border-radius: 30px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+
+}
+h1{
+    opacity: .8;
+    color: var(--Pale-blue);
+    font-size: 30px;
+
+}
+.circle{
+   
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(180deg,hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+  
+}
+.circle-header{
+    font-family: "Hanken Grotesk", serif;
+    opacity: 1;
+    color: var(--White);
+    font-size: 60px;
+    
+}
+.circle-text{
+    margin-bottom: 20px;
+    color: var(--White);
+    opacity: 0.5;
+}
+.card-left-text{
+    color: var(--White);
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.card-left-pragraph{
+   
+    color: var(--White);
+    font-size: 19px;
+    opacity: .6;
+}
+.card-right{
+    padding: 40px 35px;
+    width: 310px;
+    height: auto;
+}
+.reaction-box{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+h2{
+    font-family: "Hanken Grotesk", serif;
+    font-size: 24px;
+    opacity: .7;
+    font-weight: 600;
+}
+.stat-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 285px;
+    height: 55px;
+    border-radius: 10px;
+    
+}
+.one{
+    background-color: hsl(0, 100%, 67%, 0.1);
+} 
+.two{
+    background-color: hsl(39, 100%, 56%, .1);
+}
+.two p{
+    color: var(--Orangey-yellow);
+}
+.three{
+
+    background-color:hsl(166, 100%, 37%, .1) ;
+}
+.three p{
+    color: var(--Green-teal);
+}
+.four{
+    background-color:hsl(234, 85%, 45%, .1) ;
+}
+.four p{
+    color:var(--Cobalt-blue)
+}
+img{
+    margin-right: -120px;
+}
+
+.reaction{
+    color: var(--Light-red);
+    font-weight: 500;
+}
+.stats-results{
+    font-weight: 600;
+    font-size: 20px;
+}
+.stats-results span{
+    
+    font-size: 17px;
+    opacity: .5;
+}
+button{
+    margin-top: 35px;
+    width: 100%;
+    padding: 17px 0 ;
+    border: none;
+    background-color: var(--Dark-gray-blue);
+    border-radius: 30px;
+    color: var(--White);
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{ 
+    background-color: var(--Light-royal-blue);
+}
+
+@media   (max-width: 600px){
+    .main{
+
+        display: grid;
+        margin:0 ;
+        grid-template-columns: 1fr;
+        height: 100%;
+         width: 375px;
+         border-bottom-left-radius: 0px;
+         border-bottom-right-radius: 0px;
+         gap: 10px;
+       }
+       .card-left{
+        height: 375px;
+       border-top-right-radius: 0px;
+       border-top-left-radius: 0px;
+       width: 285px;
+      
+      }
+      h1{
+        font-size: 17.6px;
+      }
+      .circle{
+        width: 140px;
+        height: 140px;
+      }
+      .circle-header{
+        font-size:50px ;
+        margin-bottom: 5px;
+      }
+      .circle-text{
+        font-size: 16px;
+        
+      }
+      .card-left-text{
+        font-size: 24px;
+      }
+      .card-left-pragraph{
+        font-size:18px ;
+      }
+      .card-right{
+        gap: 20px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+      }
+      .righthead{
+        font-size: 19.2px;
+      }
+
+      .stat-box{
+        width: 315px;
+      }
+      .stat-box P,.stats-results{
+        font-size: 16px;
+
+      }
+     
+      .stat-box{
+        
+        width: 280px;
+        height: 50px;
+        border-radius: 10px;
+        
+    }
+
+}
